@@ -38,7 +38,6 @@ def make_graph(words):
 
         # if there was a previous word, then add an edge if it doesn't already exist
         # in the graph, otherwise increment weight by 1
-        # pdb.set_trace()
         if previous_word:
             previous_word.increment_edge(word_vertex)
 
@@ -83,7 +82,7 @@ def main(artist):
     composition = compose(g, words, 100)
 
     # step 4: show the user!
-    return ' '.join(composition)  # return all words sepaarated by a space
+    return ' '.join(composition)  # return all words separated by a space
 
 
 if __name__ == '__main__':
